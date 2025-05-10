@@ -20,7 +20,6 @@ export const Container = styled.nav`
 `
 export const HeaderLogo = styled.div`
     float: left;
-    margin-top: 1.5rem;
     a {
         display: flex;
         color: rgb(109, 201, 50);
@@ -35,11 +34,11 @@ export const HeaderLogo = styled.div`
 export const HeaderContainerMobile = styled.div`
     display: none;
     @media (max-width: 425px) {
-        margin: 1.5rem 1rem 0 1rem;
         display: block;
-        float: right;
         button {
-            width: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: green;
             background: transparent;
             border: none;

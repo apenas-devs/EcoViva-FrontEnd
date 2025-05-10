@@ -26,8 +26,6 @@ footer, header, hgroup, menu, nav, section {
 }
 svg {
 	display: block;
-	max-width: 100%;
-	height: auto;
 }
 body {
 	line-height: 1;
