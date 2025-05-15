@@ -1,54 +1,120 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- Obrigado pelas dicas de readme kipper :) -->
 
-Currently, two official plugins are available:
+[JAVASCRIPT__BADGE]: https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript
+[TYPESCRIPT__BADGE]: https://img.shields.io/badge/typescript-D4FAFF?style=for-the-badge&logo=typescript
+[REACT__BADGE]: https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h1 align="center" style="font-weight: bold;">EcoViva 🌱</h1>
 
-## Expanding the ESLint configuration
+![react][REACT__BADGE]
+![javascript][JAVASCRIPT__BADGE]
+![typescript][TYPESCRIPT__BADGE]
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> • 
+ <a href="#-começando">Começando</a> • 
+ <a href="#-stack-utilizada">Stacks Utilizadas</a> • 
+ <a href="#-rotas-da-aplicação">Rotas da Aplicação</a> • 
+ <a href="#-colaboradores">Colaboradores</a> •
+ <a href="#-contribua">Contribua</a>
+</p>
+<p align="center">
+    <img src="../.github/example.png" alt="Image Example" width="400px">
+</p>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🧾 Sobre o Projeto
+
+**EcoViva** é uma plataforma digital que promove a **comunicação entre moradores e voluntários** em prol da **preservação ambiental** e **educação sobre sustentabilidade**.
+
+Ela resolve problemas de comunicação fragmentada, permitindo que moradores:
+
+- Postem ocorrências e denúncias ambientais;
+- Compartilhem ideias de melhoria;
+- Recebam apoio direto de voluntários.
+
+Voluntários também podem:
+
+- Responder e marcar postagens como vistas ou resolvidas;
+- Divulgar eventos e workshops;
+- Publicar dicas e orientações sustentáveis.
+
+---
+
+## 🚀 Começando
+
+Clone o projeto:
+
+```bash
+git clone https://github.com/seu-usuario/ecoviva.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Entre no diretório:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+cd ecoviva
 ```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o servidor:
+
+```bash
+npm run start
+```
+
+---
+
+## 💻 Stack Utilizada
+
+**Front-end:**
+- React
+- HTML5, CSS3
+- styled-components
+- JavaScript
+- TypeScript
+
+
+Essas tecnologias foram escolhidas visando simplicidade, acessibilidade via navegador e facilidade de manutenção.
+
+---
+
+## 📍 Rotas da Aplicação
+
+| Rota                          | Descrição                                                                 |
+|------------------------------|---------------------------------------------------------------------------|
+| Em construção | Em construção |
+
+---
+
+## 🔐 Variáveis de Ambiente
+
+Crie um arquivo `.env` com as seguintes variáveis:
+
+```env
+PORT=3000
+API_BASE_URL="URL para conectar com a API do Back-End."
+```
+
+---
+
+## 👥 Colaboradores
+
+- [lcnsilva](https://github.com/lcnsilva)
+- [gbrljlima](https://github.com/gbrljlima)
+- [maiconcesar79](https://github.com/maiconcesar79)
+---
+
+## 🤝 Contribua
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, forks ou pull requests.
+
+---
+
+## 📫 Suporte
+
+Para suporte, abra uma issue ou entre em contato com os colaboradores por meio das redes sociais.
