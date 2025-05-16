@@ -39,6 +39,8 @@ Voluntários também podem:
 - Divulgar eventos e workshops;
 - Publicar dicas e orientações sustentáveis.
 
+👉[Acesse o repositório do back-end da EcoViva](https://github.com/apenas-devs/EcoViva-BackEnd)
+
 ---
 
 ## 🚀 Começando
@@ -46,13 +48,13 @@ Voluntários também podem:
 Clone o projeto:
 
 ```bash
-git clone https://github.com/seu-usuario/ecoviva.git
+git clone https://github.com/apenas-devs/EcoViva-FrontEnd.git
 ```
 
 Entre no diretório:
 
 ```bash
-cd ecoviva
+cd EcoViva-FrontEnd
 ```
 
 Instale as dependências:
@@ -78,9 +80,6 @@ npm run start
 - JavaScript
 - TypeScript
 
-
-Essas tecnologias foram escolhidas visando simplicidade, acessibilidade via navegador e facilidade de manutenção.
-
 ---
 
 ## 📍 Rotas da Aplicação
@@ -96,7 +95,7 @@ Essas tecnologias foram escolhidas visando simplicidade, acessibilidade via nave
 Crie um arquivo `.env` com as seguintes variáveis:
 
 ```env
-PORT=3000
+PORT=5173
 API_BASE_URL="URL para conectar com a API do Back-End."
 ```
 
