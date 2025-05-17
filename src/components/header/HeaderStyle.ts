@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+interface HeaderProps {
+    open: boolean;
+}
 
 export const HeaderContainer = styled.header`
     display:block;
@@ -45,3 +48,21 @@ export const HeaderContainerMobile = styled.div`
         }  
     }   
 `;
+export const MenuContainer = styled.div<HeaderProps>`
+    @media (max-width: 768px) {
+        display: ${(props) => (props.open ? "block" : "none")};
+        border-top: 1px solid rgb(224, 247, 197);
+        animation: 0.3s ease-out 0s 1 normal none running fadeIn;
+        }
+`;
+export const MenuItem = styled.div`
+    @media (max-width: 768px) {
+        a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: rgb(53, 102, 26);
+            text-decoration: none;
+            margin-bottom: 0.25rem;
+        }
+    }
+`
