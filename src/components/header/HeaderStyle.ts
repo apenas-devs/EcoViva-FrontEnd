@@ -36,7 +36,7 @@ export const HeaderLogo = styled.div`
 `
 export const HeaderContainerMobile = styled.div`
     display: none;
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
         display: block;
         button {
             display: flex;
@@ -53,16 +53,45 @@ export const MenuContainer = styled.div<HeaderProps>`
         display: ${(props) => (props.open ? "block" : "none")};
         border-top: 1px solid rgb(224, 247, 197);
         animation: 0.3s ease-out 0s 1 normal none running fadeIn;
-        }
+    }
 `;
 export const MenuItem = styled.div`
+    display: none;
     @media (max-width: 768px) {
+        display: block;
+        padding: 0.5rem 1rem 1rem;
+        margin: 0 auto;
         a {
             display: block;
             padding: 0.5rem 1rem;
             color: rgb(53, 102, 26);
             text-decoration: none;
             margin-bottom: 0.25rem;
+            div {
+                display: flex;
+                align-items: center;
+                svg {
+                    margin-right: 0.5rem;
+                    }
+                }
         }
     }
+`
+export const PublishContainer = styled.div`
+    padding: 0.5rem 1rem 0px;
+    button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transition: 0.15s ease-in-out;
+        font-size: 1rem;
+        background-color: rgb(109, 201, 50);
+        border: none;
+        color: white;
+        border-radius: 0.375rem;
+        border: none;
+        padding: 0.5rem 1rem;
+    }
+}
 `
