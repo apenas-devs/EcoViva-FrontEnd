@@ -20,6 +20,10 @@ export const Container = styled.nav`
     justify-content: space-between;
     align-items: center;
     height: 4rem;
+    max-width: 1280px;
+    @media (min-width: 600px) {
+        padding: 0px 1.5rem; 
+    }
 `
 export const HeaderLogo = styled.div`
     float: left;
@@ -33,6 +37,30 @@ export const HeaderLogo = styled.div`
             font-weight: 600;
             }
         }
+`
+export const HeaderContainerDesktop = styled.div`
+    display: none;
+    align-items: center;
+    @media (min-width: 769px) {
+        display: flex;
+    }
+        a {
+            display: flex;
+            align-items: center;
+            color: rgb(53, 102, 26);
+            text-decoration: none;
+            margin: 0 .5rem;
+            padding: 0.5rem .9rem;
+            border-radius: 0.375rem;
+            transition: 0.15s ease-in-out;
+            &:hover {
+                background-color: rgb(230, 250, 207);
+                }
+            svg {
+                margin-right: 0.25rem;
+            }
+        }
+    
 `
 export const HeaderContainerMobile = styled.div`
     display: none;
@@ -72,26 +100,27 @@ export const MenuItem = styled.div`
                 align-items: center;
                 svg {
                     margin-right: 0.5rem;
-                    }
                 }
+            }
         }
+        
     }
 `
-export const PublishContainer = styled.div`
-    padding: 0.5rem 1rem 0px;
-    button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        transition: 0.15s ease-in-out;
-        font-size: 1rem;
-        background-color: rgb(109, 201, 50);
-        border: none;
-        color: white;
-        border-radius: 0.375rem;
-        border: none;
-        padding: 0.5rem 1rem;
+export const PublishButton = styled.button`
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: 0.15s ease-in-out;
+    font-size: 1rem;
+    background-color: rgb(109, 201, 50);
+    border: none;
+    color: white;
+    border-radius: 0.375rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(81, 175, 44);
     }
-}
 `
